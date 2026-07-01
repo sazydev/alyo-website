@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="juridique.css">
+  <link rel="icon" href="../logo/fav/fav-transparent.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../logo/fav/fav-transparent.png">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+════════════════════════════════ -->
+<header id="mainHeader">
+  <div class="header-backdrop" aria-hidden="true"></div>
+
+  <a href="../index.html" class="logo" aria-label="Accueil Alyo">
+    <span class="logo-mark"></span>
+  </a>
+
+  <nav class="header-nav" id="headerNav">
+    <button type="button" class="nav-mobile-back" id="navMobileBack" aria-label="Fermer le menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Retour</span>
+    </button>
+    <a href="../index.html">Accueil</a>
+    <a href="web.html">Web</a>
+    <a href="creation.html">Création</a>
+    <a href="a-propos.html">À propos</a>
+    <div class="nav-mobile-ctas">
+      <a href="contact.html" class="btn-green">Contactez-nous</a>
+    </div>
+    <div class="nav-mobile-socials">
+      <a href="#" class="nav-social-btn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/></svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <div class="header-ctas">
+    <a href="contact.html" class="btn-green">Contactez-nous</a>
+  </div>
+
+  <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="headerNav">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+</header>
+
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+<main class="legal-page">
+  <section class="legal-hero">
+    <span class="legal-kicker">Informations légales</span>
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : 1 juillet 2026</p>
+    <p>La présente politique de confidentialité explique comment ALYO collecte, utilise et protège les données personnelles transmises via le site alyo-communication.fr.</p>
+    <a href="../index.html" class="legal-back">← Retour à l’accueil</a>
+  </section>
+
+  <section class="legal-layout">
+    <aside class="legal-summary" aria-label="Sommaire de la politique de confidentialité">
+      <h2>Sommaire</h2>
+      <a href="#responsable-du-traitement">Responsable du traitement</a>
+      <a href="#donnees-collectees">Données collectées</a>
+      <a href="#finalites-de-la-collecte">Finalités de la collecte</a>
+      <a href="#base-legale-du-traitement">Base légale du traitement</a>
+      <a href="#duree-de-conservation">Durée de conservation</a>
+      <a href="#destinataires-des-donnees">Destinataires des données</a>
+      <a href="#google-analytics-et-google-tag-manager">Google Analytics et Google Tag Manager</a>
+      <a href="#cookies">Cookies</a>
+      <a href="#securite-des-donnees">Sécurité des données</a>
+      <a href="#droits-des-utilisateurs">Droits des utilisateurs</a>
+      <a href="#reclamation-aupres-de-la-cnil">Réclamation auprès de la CNIL</a>
+      <a href="#transfert-hors-union-europeenne">Transfert hors Union européenne</a>
+      <a href="#modification-de-la-politique-de-confidentialite">Modification de la politique de confidentialité</a>
+      <a href="#contact">Contact</a>
+    </aside>
+
+    <div class="legal-content">
+      <article class="legal-card" id="responsable-du-traitement">
+        <h2>Responsable du traitement</h2>
+
+        <p>Le responsable du traitement des données personnelles est :</p>
+
+        <p>ALYO<br>Mattéo Boyeau Courtin<br>Entrepreneur individuel<br>SIREN : 104 851 068<br>SIRET : 104 851 068 00015</p>
+
+        <p>Adresse :<br>6 rue Valdemaine<br>49100 Angers<br>France</p>
+
+        <p>Contact :<br><a href="mailto:contact@alyo-communication.fr">contact@alyo-communication.fr</a></p>
+      </article>
+
+      <article class="legal-card" id="donnees-collectees">
+        <h2>Données collectées</h2>
+
+        <p>ALYO peut collecter les données personnelles suivantes lorsque vous utilisez le formulaire de contact :</p>
+
+        <p>• nom et prénom</p>
+
+        <p>• adresse e-mail</p>
+
+        <p>• numéro de téléphone</p>
+
+        <p>• type de demande</p>
+
+        <p>• contenu du message transmis</p>
+
+        <p>Ces données sont fournies directement par l'utilisateur lorsqu'il remplit le formulaire de contact.</p>
+      </article>
+
+      <article class="legal-card" id="finalites-de-la-collecte">
+        <h2>Finalités de la collecte</h2>
+
+        <p>Les données collectées sont utilisées uniquement pour :</p>
+
+        <p>• répondre aux demandes envoyées via le formulaire de contact</p>
+
+        <p>• échanger avec les prospects et clients</p>
+
+        <p>• préparer un devis ou une proposition commerciale</p>
+
+        <p>• assurer le suivi d'une demande ou d'un projet</p>
+
+        <p>• gérer la relation commerciale</p>
+
+        <p>ALYO ne vend pas, ne loue pas et ne transmet pas les données personnelles à des tiers à des fins commerciales.</p>
+      </article>
+
+      <article class="legal-card" id="base-legale-du-traitement">
+        <h2>Base légale du traitement</h2>
+
+        <p>Les données personnelles sont traitées sur la base :</p>
+
+        <p>• du consentement de l'utilisateur lorsqu'il remplit le formulaire de contact</p>
+
+        <p>• de l'intérêt légitime d'ALYO à répondre aux demandes reçues</p>
+
+        <p>• de l'exécution de mesures précontractuelles lorsqu'une demande concerne un devis ou une prestation</p>
+      </article>
+
+      <article class="legal-card" id="duree-de-conservation">
+        <h2>Durée de conservation</h2>
+
+        <p>Les données transmises via le formulaire de contact sont conservées pendant une durée maximale de 3 ans à compter du dernier échange avec l'utilisateur, sauf obligation légale imposant une durée de conservation plus longue.</p>
+
+        <p>Les données relatives aux devis, factures et documents comptables peuvent être conservées pendant la durée légale applicable.</p>
+      </article>
+
+      <article class="legal-card" id="destinataires-des-donnees">
+        <h2>Destinataires des données</h2>
+
+        <p>Les données collectées sont destinées uniquement à ALYO.</p>
+
+        <p>Elles peuvent toutefois être traitées par certains prestataires techniques strictement nécessaires au fonctionnement du site ou des services utilisés, notamment :</p>
+
+        <p>• Netlify, pour l'hébergement du site</p>
+
+        <p>• les services de messagerie utilisés pour recevoir les demandes de contact</p>
+
+        <p>• Google, pour les outils de mesure d'audience et de gestion des balises si Google Analytics ou Google Tag Manager sont activés</p>
+
+        <p>Ces prestataires peuvent traiter certaines données dans le cadre de leurs propres conditions et politiques de confidentialité.</p>
+      </article>
+
+      <article class="legal-card" id="google-analytics-et-google-tag-manager">
+        <h2>Google Analytics et Google Tag Manager</h2>
+
+        <p>ALYO peut utiliser Google Analytics afin de mesurer l'audience du site et comprendre la manière dont les visiteurs naviguent sur les pages.</p>
+
+        <p>ALYO peut également utiliser Google Tag Manager afin de gérer certains scripts ou balises techniques.</p>
+
+        <p>Ces outils peuvent collecter certaines informations techniques, comme :</p>
+
+        <p>• les pages consultées</p>
+
+        <p>• la durée de visite</p>
+
+        <p>• le type d'appareil utilisé</p>
+
+        <p>• le navigateur utilisé</p>
+
+        <p>• des informations de navigation anonymisées ou pseudonymisées</p>
+
+        <p>Les cookies non essentiels liés à la mesure d'audience ne sont déposés qu'après consentement de l'utilisateur, lorsque le bandeau cookies est mis en place.</p>
+      </article>
+
+      <article class="legal-card" id="cookies">
+        <h2>Cookies</h2>
+
+        <p>Le site peut utiliser des cookies nécessaires à son bon fonctionnement ainsi que des cookies de mesure d'audience, notamment via Google Analytics.</p>
+
+        <p>L'utilisateur peut accepter, refuser ou modifier ses préférences concernant les cookies non essentiels.</p>
+
+        <p>Pour plus d'informations, une politique de cookies dédiée est accessible sur le site.</p>
+      </article>
+
+      <article class="legal-card" id="securite-des-donnees">
+        <h2>Sécurité des données</h2>
+
+        <p>ALYO met en œuvre des mesures raisonnables afin de protéger les données personnelles contre l'accès non autorisé, la perte, l'altération ou la divulgation.</p>
+
+        <p>Toutefois, aucun système de transmission ou de stockage de données sur Internet ne peut être garanti comme totalement sécurisé.</p>
+      </article>
+
+      <article class="legal-card" id="droits-des-utilisateurs">
+        <h2>Droits des utilisateurs</h2>
+
+        <p>Conformément au Règlement Général sur la Protection des Données et à la loi Informatique et Libertés, l'utilisateur dispose des droits suivants :</p>
+
+        <p>• droit d'accès à ses données personnelles</p>
+
+        <p>• droit de rectification</p>
+
+        <p>• droit d'effacement</p>
+
+        <p>• droit d'opposition</p>
+
+        <p>• droit à la limitation du traitement</p>
+
+        <p>• droit à la portabilité des données lorsque cela est applicable</p>
+
+        <p>• droit de retirer son consentement à tout moment</p>
+
+        <p>Pour exercer ces droits, l'utilisateur peut contacter ALYO à l'adresse suivante :</p>
+
+        <p><a href="mailto:contact@alyo-communication.fr">contact@alyo-communication.fr</a></p>
+
+        <p>ALYO pourra demander une preuve d'identité si cela est nécessaire afin de traiter la demande.</p>
+      </article>
+
+      <article class="legal-card" id="reclamation-aupres-de-la-cnil">
+        <h2>Réclamation auprès de la CNIL</h2>
+
+        <p>Si l'utilisateur estime que ses droits ne sont pas respectés, il peut adresser une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés.</p>
+
+        <p>Site internet :<br><a href="https://www.cnil.fr">https://www.cnil.fr</a></p>
+      </article>
+
+      <article class="legal-card" id="transfert-hors-union-europeenne">
+        <h2>Transfert hors Union européenne</h2>
+
+        <p>Certains prestataires utilisés par ALYO, notamment Google ou Netlify, peuvent être situés en dehors de l'Union européenne.</p>
+
+        <p>Lorsque des données sont transférées hors de l'Union européenne, ces transferts sont encadrés par les garanties prévues par la réglementation applicable.</p>
+      </article>
+
+      <article class="legal-card" id="modification-de-la-politique-de-confidentialite">
+        <h2>Modification de la politique de confidentialité</h2>
+
+        <p>ALYO se réserve le droit de modifier la présente politique de confidentialité à tout moment afin de l'adapter aux évolutions du site, des services proposés ou de la réglementation.</p>
+
+        <p>La date de dernière mise à jour est indiquée en haut de cette page.</p>
+      </article>
+
+      <article class="legal-card" id="contact">
+        <h2>Contact</h2>
+
+        <p>Pour toute question concernant la présente politique de confidentialité ou le traitement des données personnelles, vous pouvez contacter :</p>
+
+        <p>ALYO<br><a href="mailto:contact@alyo-communication.fr">contact@alyo-communication.fr</a></p>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+<!-- ═══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo" aria-label="Alyo - retour à l'accueil">
+          <img src="../logo/logo-white.png" alt="Logo Alyo" />
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="web.html">Création web</a></li>
+          <li><a href="creation.html">Identité visuelle</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgv.html">CGV</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@alyo-communication.fr">contact@alyo-communication.fr</a></li>
+          <li><a href="tel:+33754366013">+33 7 54 36 60 13</a></li>
+          <li><a href="#">Angers, France</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2026 Alyo</span>
+        <span class="footer-dot"></span>
+        <span>Tous droits réservés</span>
+      </div>
+
+      <div class="socials">
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="global.js"></script>
+</body>
+</html>
