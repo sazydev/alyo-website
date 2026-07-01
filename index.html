@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo/fav/fav-transparent.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/fav/fav-transparent.png">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="mainHeader">
+  <div class="header-backdrop" aria-hidden="true"></div>
+  <a href="#" class="logo" aria-label="Accueil Alyo">
+    <span class="logo-mark"></span>
+  </a>
+
+  <nav class="header-nav" id="headerNav">
+    <button type="button" class="nav-mobile-back" id="navMobileBack" aria-label="Fermer le menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Retour</span>
+    </button>
+    <a href="index.html" class="nav-active">Accueil</a>
+    <a href="/page/web.html">Web</a>
+    <a href="/page/creation.html">Création</a>
+    <a href="/page/a-propos.html">À propos</a>
+    <!-- CTA mobile inside nav -->
+    <div class="nav-mobile-ctas">
+      <a href="/page/contact.html" class="btn-green">Contactez-nous</a>
+    </div>
+
+    <div class="nav-mobile-socials">
+      <a href="#" class="nav-social-btn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/>
+        </svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/>
+        </svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <div class="header-ctas">
+    <a href="/page/contact.html" class="btn-green">Contactez-nous</a>
+  </div>
+
+  <!-- Burger button -->
+  <button
+    class="burger-btn"
+    id="burgerBtn"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="headerNav"
+  >
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+</header>
+
+<!-- Overlay menu mobile -->
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-pattern">
+    <div class="hero-pattern-text" style="top:5%">
+    ALYO&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CROISSANCE&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;ALYO&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CROISSANCE&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:18%">
+    ADHERENTS&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;CONVERSION&nbsp;&nbsp;&nbsp;RÉSULTATS&nbsp;&nbsp;&nbsp;ADHERENTS&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;CONVERSION&nbsp;&nbsp;&nbsp;RÉSULTATS&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:31%">
+    STRATÉGIE&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;CROISSANCE&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;STRATÉGIE&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;CROISSANCE&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:44%">
+    ALYO&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;RÉSULTATS&nbsp;&nbsp;&nbsp;ALYO&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;RÉSULTATS&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:57%">
+    CONVERSION&nbsp;&nbsp;&nbsp;ADHERENTS&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;CONVERSION&nbsp;&nbsp;&nbsp;ADHERENTS&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:70%">
+    CROISSANCE&nbsp;&nbsp;&nbsp;STRATÉGIE&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;CROISSANCE&nbsp;&nbsp;&nbsp;STRATÉGIE&nbsp;&nbsp;&nbsp;PERFORMANCE&nbsp;&nbsp;&nbsp;ACQUISITION&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="hero-pattern-text" style="top:83%">
+    RÉSULTATS&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;ADHERENTS&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;RÉSULTATS&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;ADHERENTS&nbsp;&nbsp;&nbsp;IMPACT&nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-logo">
+      <img src="logo/logo-white.png" alt="Alyo logo">
+    </div>
+    <h1>ATTIREZ<br><span>CONVERTISSEZ</span><br>DÉVELOPPEZ</h1>
+    <p>Une présence digitale simple et efficace pour attirer plus d'adhérents</p>
+    <a href="#presentation" class="btn-green btn-hero">Découvrir Alyo</a>
+  </div>
+</section>
+
+<!-- PRÉSENTATION -->
+<section id="presentation" class="section-presentation-wrap">
+  <div class="section-presentation">
+    <div class="mockup-wrap reveal">
+      <div class="mockup-blob"></div>
+
+      <div class="mockup-window">
+        <div class="mockup-bar">
+          <div class="dot dot-r"></div>
+          <div class="dot dot-y"></div>
+          <div class="dot dot-g"></div>
+        </div>
+
+        <div class="mockup-body">
+          <div class="mockup-row">
+            <div class="mockup-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3C7.029 3 3 7.029 3 12s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M3.8 9h16.4M3.8 15h16.4M12 3c2.2 2.3 3.4 5.4 3.4 9S14.2 18.7 12 21c-2.2-2.3-3.4-5.4-3.4-9S9.8 5.3 12 3Z" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-title">Site vitrine</div>
+              <div class="mockup-subtitle">Design moderne • Responsive • Mise en ligne rapide</div>
+            </div>
+            <div class="mockup-status success">En ligne</div>
+          </div>
+
+          <div class="mockup-row">
+            <div class="mockup-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="7" y="2.8" width="10" height="18.4" rx="2.2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M10 6.5h4M10 17.5h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-title">Réseaux sociaux</div>
+              <div class="mockup-subtitle">Visuels cohérents • Présence locale • Image professionnelle</div>
+            </div>
+            <div class="mockup-status success">Actif</div>
+          </div>
+
+          <div class="mockup-row">
+            <div class="mockup-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 18.5h14M7.5 15.5V10M12 15.5V6.5M16.5 15.5V12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M16.5 7.5h3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.5 10.5 14.8 5.8 11.6 9 9.4 6.8 5 11.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-title">Visibilité & résultats</div>
+              <div class="mockup-subtitle">Plus de trafic • Plus de demandes • Plus d'impact</div>
+            </div>
+            <div class="mockup-status success">+ Croissance</div>
+          </div>
+
+          <div class="mockup-metrics">
+            <div class="metric-card">
+              <div class="metric-value">+47%</div>
+              <div class="metric-label">Trafic web</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">3×</div>
+              <div class="metric-label">Demandes reçues</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="floating-badge badge-top"></div>
+      <div class="floating-badge badge-bot"></div>
+    </div>
+
+    <div class="pres-text reveal reveal-d2">
+      <span class="tag-label">Pensé pour les clubs</span>
+      <h2>Une présence digitale pensée pour donner confiance à vos<span class="highlight">sponsors et adhérents</span></h2>
+      <p>Des solutions simples pour améliorer votre visibilité et votre image professionnelle.</p>
+
+      <div class="checklist">
+        <div class="check-item"><span class="check-circle">✓</span> Création de sites web</div>
+        <div class="check-item"><span class="check-circle">✓</span> Identité visuelle</div>
+        <div class="check-item"><span class="check-circle">✓</span> Réseaux sociaux</div>
+      </div>
+
+      <a href="#" class="btn-blue">Demander un devis →</a>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI ALYO -->
+<section class="section-pourquoi">
+  <div class="pourquoi-inner">
+    <div class="pourquoi-left reveal">
+      <span class="pourquoi-label">Pourquoi Alyo</span>
+
+      <h2 class="pourquoi-title">
+        UNE APPROCHE QUI FAIT LA DIFFÉRENCE
+      </h2>
+
+      <p class="pourquoi-intro">
+        Alyo aide les clubs sportifs à avoir une présence digitale plus crédible, plus moderne et plus efficace.
+      </p>
+    </div>
+
+    <div class="pourquoi-right">
+      <div class="pourquoi-card reveal reveal-d1">
+        <div class="pourquoi-card-top">
+          <div class="pourquoi-num">01</div>
+          <div class="pourquoi-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M8 12.5 11 15.5 17 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Simple à lancer</h3>
+        <p>On s'occupe de cadrer, créer et mettre en ligne votre présence digitale sans complexité inutile.</p>
+      </div>
+
+      <div class="pourquoi-card reveal reveal-d2">
+        <div class="pourquoi-card-top">
+          <div class="pourquoi-num">02</div>
+          <div class="pourquoi-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 18.5h14M7.5 15.5V10M12 15.5V6.5M16.5 15.5V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16.5 7.5h3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.5 10.5 14.8 5.8 11.6 9 9.4 6.8 5 11.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Plus crédible, plus visible</h3>
+        <p>Un site et une image plus propres donnent plus confiance et donnent davantage envie de vous contacter.</p>
+      </div>
+
+      <div class="pourquoi-card reveal reveal-d3">
+        <div class="pourquoi-card-top">
+          <div class="pourquoi-num">03</div>
+          <div class="pourquoi-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 20a7 7 0 0 1 14 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Déjà de l'expérience terrain</h3>
+        <p>Alyo s'appuie déjà sur des projets concrets menés pour des clubs sportifs, avec une logique claire et utile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIBILITÉ -->
+<section class="section-visibilite">
+  <div class="visibilite-bg-shape visibilite-bg-shape-1"></div>
+  <div class="visibilite-bg-shape visibilite-bg-shape-2"></div>
+
+  <div class="visibilite-inner">
+    <div class="visibilite-left reveal">
+      <span class="visibilite-tag">Ce que nous faisons</span>
+
+      <h2>
+        Gagnez en <br />
+        visibilité
+      </h2>
+
+      <p class="visibilite-intro">
+        Nous aidons les clubs sportifs à mieux se présenter, mieux communiquer et gagner en crédibilité auprès de leurs sponsors et adhérents.
+      </p>
+
+      <div class="floating-items">
+        <div class="float-item">
+          <div class="float-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18"></path>
+              <path d="M12 3a15 15 0 0 1 4 9 15 15 0 0 1-4 9 15 15 0 0 1-4-9 15 15 0 0 1 4-9z"></path>
+            </svg>
+          </div>
+          <div class="float-text">
+            <strong>Site web</strong>
+            <span>Une présence claire et professionnelle</span>
+          </div>
+        </div>
+
+        <div class="float-item">
+          <div class="float-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
+              <path d="M11 18.5h2"></path>
+            </svg>
+          </div>
+          <div class="float-text">
+            <strong>Réseaux sociaux</strong>
+            <span>Du contenu cohérent et visible</span>
+          </div>
+        </div>
+
+        <div class="float-item">
+          <div class="float-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l1.8 3.6L18 8.4l-3 3 .7 4.2L12 14l-3.7 1.6.7-4.2-3-3 4.2-1.8L12 3z"></path>
+            </svg>
+          </div>
+          <div class="float-text">
+            <strong>Identité visuelle</strong>
+            <span>Une image plus forte et reconnaissable</span>
+          </div>
+        </div>
+
+        <div class="float-item">
+          <div class="float-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 6h16v12H4z"></path>
+              <path d="M4 8l8 5 8-5"></path>
+            </svg>
+          </div>
+          <div class="float-text">
+            <strong>Communication</strong>
+            <span>Des messages plus simples et efficaces</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d2">
+      <div class="visibilite-card">
+        <div class="visibilite-card-top">
+          <span class="card-mini-tag">Visibilité utile</span>
+        </div>
+
+        <h3>Plus de crédibilité. Plus de soutien.</h3>
+
+        <p>
+          Un bon site, une image cohérente et une communication bien pensée
+          permettent d'inspirer confiance, de mieux vous faire connaître et de
+          transformer plus facilement l'intérêt en contact.
+        </p>
+
+        <div class="visibilite-points">
+          <div class="visibilite-point">
+            <span class="point-dot"></span>
+            <span>Une image plus professionnelle</span>
+          </div>
+          <div class="visibilite-point">
+            <span class="point-dot"></span>
+            <span>Plus de crédibilité auprès de vos sponsors et adhérents</span>
+          </div>
+          <div class="visibilite-point">
+            <span class="point-dot"></span>
+            <span>Une communication plus claire et plus rentable</span>
+          </div>
+        </div>
+
+        <div class="promise-box">
+          <strong>Notre objectif :</strong> vous aider à convaincre vos sponsors et attirer plus d'adhérents grâce à une communication claire, moderne et efficace.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-process">
+  <div class="process-bg-glow process-bg-glow-1"></div>
+  <div class="process-bg-glow process-bg-glow-2"></div>
+
+  <div class="process-inner">
+    <div class="process-left reveal">
+      <span class="process-tag">Notre méthode</span>
+
+      <h2>Une méthode simple</h2>
+
+      <p class="process-intro">
+        Vous n'avez pas le temps de tout gérer ? On structure votre présence
+        digitale de A à Z : stratégie, création, contenus et mise en ligne.
+        Vous gardez l'essentiel en tête, nous gérons le reste.
+      </p>
+
+      <div class="process-checks">
+        <div class="process-check">
+          <span class="p-check-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+          <div>
+            <strong>Un seul interlocuteur</strong>
+            <span>Un accompagnement clair du début jusqu'au lancement.</span>
+          </div>
+        </div>
+
+        <div class="process-check">
+          <span class="p-check-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+          <div>
+            <strong>Aucune complexité technique</strong>
+            <span>On simplifie chaque étape pour avancer vite et proprement.</span>
+          </div>
+        </div>
+
+        <div class="process-check">
+          <span class="p-check-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>
+          <div>
+            <strong>Une méthode complète</strong>
+            <span>Design, contenu, publication et mise en ligne dans une logique cohérente.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-right reveal reveal-d2">
+      <div class="process-steps-line"></div>
+
+      <article class="process-card process-card-1">
+        <div class="process-card-top">
+          <span class="process-step-number">01</span>
+          <div class="process-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="M21 21l-4.3-4.3"></path>
+            </svg>
+          </div>
+        </div>
+        <h3>Analyse</h3>
+        <p>On comprend votre activité, vos besoins et ce qu'il faut vraiment mettre en avant.</p>
+      </article>
+
+      <article class="process-card process-card-2">
+        <div class="process-card-top">
+          <span class="process-step-number">02</span>
+          <div class="process-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5V8.5"></path>
+              <path d="M10 19.5V4.5"></path>
+              <path d="M16 19.5v-7"></path>
+              <path d="M22 19.5V10.5"></path>
+            </svg>
+          </div>
+        </div>
+        <h3>Structure</h3>
+        <p>On construit une base claire pour votre site, vos contenus et votre communication.</p>
+      </article>
+
+      <article class="process-card process-card-3">
+        <div class="process-card-top">
+          <span class="process-step-number">03</span>
+          <div class="process-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l2.8 5.7L21 9.6l-4.5 4.3 1.1 6.1L12 17l-5.6 3 1.1-6.1L3 9.6l6.2-.9L12 3z"></path>
+            </svg>
+          </div>
+        </div>
+        <h3>Création</h3>
+        <p>Visuels, identité, pages, contenus : tout est pensé pour être propre, cohérent et impactant.</p>
+      </article>
+
+      <article class="process-card process-card-4">
+        <div class="process-card-top">
+          <span class="process-step-number">04</span>
+          <div class="process-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="M13 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+        <h3>Lancement</h3>
+        <p>On met en ligne, on diffuse et on vous livre une communication prête à travailler pour vous.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIANCE -->
+<section class="section-confiance">
+  <img
+    src="assets/svg-hands/gauche.png"
+    alt=""
+    class="fist-left"
+    aria-hidden="true"
+  />
+
+  <img
+    src="assets/svg-hands/droite.svg"
+    alt=""
+    class="fist-right"
+    aria-hidden="true"
+  />
+
+  <div class="confiance-inner reveal">
+    <div class="confiance-card">
+      <div class="confiance-logo" aria-label="Alyo"></div>
+
+      <h2>FAITES CONFIANCE À ALYO</h2>
+
+      <p>
+Des projets concrets réalisés pour des clubs sportifs avec des résultats visibles. Nous combinons expertise digitale et connaissance du terrain sportif.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section class="section-projets">
+  <div class="projets-header reveal">
+    <h2>Nos réalisations</h2>
+  </div>
+
+  <div class="projets-grid">
+    <a href="https://segretennisdetable.fr" target="_blank" rel="noopener noreferrer" class="projet-card reveal reveal-d1">
+      <div class="projet-img bg-p1">
+        <img src="assets/realisations/stt/logo.png" alt="Logo Segré Tennis de Table" />
+      </div>
+      <div class="projet-info">
+        <span class="projet-tag">Club sportif</span>
+        <h3>Site web club sportif</h3>
+        <p>
+          Création du logo, des affiches de communication et réalisation complète
+          du site web du club de tennis de table de Segré-en-Anjou Bleu.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://escalmds.netlify.app" target="_blank" rel="noopener noreferrer" class="projet-card reveal reveal-d2">
+      <div class="projet-img bg-p2">
+        <img src="assets/realisations/escal/logo.png" alt="Logo ESCA'L" />
+      </div>
+      <div class="projet-info">
+        <span class="projet-tag">Association</span>
+        <h3>Site web associatif</h3>
+        <p>
+          Refonte complète du logo et conception du site internet d'Esca'l (groupe Adapei 49), plus
+          moderne et plus accessible.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://novamds.netlify.app" target="_blank" rel="noopener noreferrer" class="projet-card reveal reveal-d3">
+      <div class="projet-img bg-p3">
+        <img src="assets/realisations/nova/favblanc.png" alt="Logo Nova Project" />
+      </div>
+      <div class="projet-info">
+        <span class="projet-tag">E-commerce</span>
+        <h3>Projet e-commerce Nova</h3>
+        <p>
+          Création complète de l'univers : logo, identité visuelle, design des
+          vêtements et site e-commerce.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <p class="projets-note">
+    Cliquez sur un projet pour voir le site en ligne et découvrir concrètement le résultat.
+  </p>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section-cta">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="cta-content reveal">
+    <h2>Prêt à donner à votre club l'image qu'il mérite ?</h2>
+    <p>Discutons de votre projet et voyons comment convaincre vos sponsors et attirer plus de licenciés.</p>
+    <a href="/page/contact.html" class="btn-green-big">Me contacter</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Alyo - retour à l'accueil">
+          <img src="logo/logo-white.png" alt="Logo Alyo" />
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/page/web.html">Création web</a></li>
+          <li><a href="/page/creation.html">Identité visuelle</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="/page/a-propos.html">À propos</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="/page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <ul>
+          <li><a href="/page/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="/page/politique-confidentialite.html">Confidentialité</a></li>
+          <li><a href="/page/cgu.html">Conditions</a></li>
+          <li><a href="/page/cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="/cdn-cgi/l/email-protection#3c5f5352485d5f487c5d504553125a4e"><span class="__cf_email__" data-cfemail="d3b0bcbda7b2b0a793b2bfaabcfdb5a1">contact@alyo.fr</span></a></li>
+          <li><a href="tel:+33754366013">+33 7 54 36 60 13</a></li>
+          <li><a href="#">Angers, France</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2026 Alyo</span>
+        <span class="footer-dot"></span>
+        <span>Tous droits réservés</span>
+      </div>
+
+      <div class="socials">
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/>
+          </svg>
+        </a>
+
+        <a href="#" class="social-btn" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="/page/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="../logo/fav/fav-transparent.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../logo/fav/fav-transparent.png">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+════════════════════════════════ -->
+<header id="mainHeader">
+  <div class="header-backdrop" aria-hidden="true"></div>
+
+  <a href="../index.html" class="logo" aria-label="Accueil Alyo">
+    <span class="logo-mark"></span>
+  </a>
+
+  <nav class="header-nav" id="headerNav">
+    <button type="button" class="nav-mobile-back" id="navMobileBack" aria-label="Fermer le menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Retour</span>
+    </button>
+    <a href="../index.html">Accueil</a>
+    <a href="web.html">Web</a>
+    <a href="creation.html">Création</a>
+    <a href="a-propos.html">À propos</a>
+    <div class="nav-mobile-ctas">
+      <a href="contact.html" class="btn-green">Contactez-nous</a>
+    </div>
+    <div class="nav-mobile-socials">
+      <a href="#" class="nav-social-btn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/></svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+      </a>
+      <a href="#" class="nav-social-btn" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <div class="header-ctas">
+    <a href="contact.html" class="btn-green">Contactez-nous</a>
+  </div>
+
+  <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="headerNav">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
+</header>
+
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════
+     1. HERO CONTACT
+════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-pattern">
+    <div class="hero-pattern-text" style="top:5%">CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:18%">ALYO&nbsp;&nbsp;&nbsp;COMMUNICATION&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CLIENTS&nbsp;&nbsp;&nbsp;ALYO&nbsp;&nbsp;&nbsp;COMMUNICATION&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CLIENTS&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:31%">LOGO&nbsp;&nbsp;&nbsp;AFFICHE&nbsp;&nbsp;&nbsp;MAINTENANCE&nbsp;&nbsp;&nbsp;IDENTITÉ&nbsp;&nbsp;&nbsp;LOGO&nbsp;&nbsp;&nbsp;AFFICHE&nbsp;&nbsp;&nbsp;MAINTENANCE&nbsp;&nbsp;&nbsp;IDENTITÉ&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:44%">CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:57%">ALYO&nbsp;&nbsp;&nbsp;COMMUNICATION&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CLIENTS&nbsp;&nbsp;&nbsp;ALYO&nbsp;&nbsp;&nbsp;COMMUNICATION&nbsp;&nbsp;&nbsp;VISIBILITÉ&nbsp;&nbsp;&nbsp;CLIENTS&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:70%">LOGO&nbsp;&nbsp;&nbsp;AFFICHE&nbsp;&nbsp;&nbsp;MAINTENANCE&nbsp;&nbsp;&nbsp;IDENTITÉ&nbsp;&nbsp;&nbsp;LOGO&nbsp;&nbsp;&nbsp;AFFICHE&nbsp;&nbsp;&nbsp;MAINTENANCE&nbsp;&nbsp;&nbsp;IDENTITÉ&nbsp;&nbsp;&nbsp;</div>
+    <div class="hero-pattern-text" style="top:83%">CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;CONTACT&nbsp;&nbsp;&nbsp;PROJET&nbsp;&nbsp;&nbsp;DEVIS&nbsp;&nbsp;&nbsp;SITE WEB&nbsp;&nbsp;&nbsp;</div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Parlons de votre<br><span>projet</span></h1>
+    <p>Site web, logo, affiche, maintenance ou demande spécifique : envoyez-nous votre besoin, nous vous répondrons simplement.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-green btn-hero">Envoyer une demande</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CONTACT
+════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid-bg"></div>
+
+  <div class="section-inner contact-inner">
+
+    <div class="contact-title-block reveal">
+      <span class="contact-mini-label">Contact direct</span>
+      <h2>Donnez-nous les bonnes infos,<br>on s’occupe du reste.</h2>
+      <p>
+        Expliquez votre besoin en quelques lignes. L’objectif est simple :
+        comprendre votre projet rapidement pour vous répondre avec une solution claire.
+      </p>
+    </div>
+
+    <div class="contact-main-card reveal">
+      <form action="https://formspree.io/f/xykowkyj" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="Nouvelle demande depuis le site Alyo">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nom et prénom</label>
+            <input type="text" id="name" name="Nom et prénom" placeholder="Votre nom complet" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="Téléphone" placeholder="06 00 00 00 00">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="Email" placeholder="votre@email.fr" required>
+        </div>
+
+        <div class="form-group">
+          <label for="request">Type de demande</label>
+          <select id="request" name="Type de demande" required>
+            <option value="" disabled selected>Choisir une demande</option>
+            <option value="Création de site web">Création de site web</option>
+            <option value="Création d’affiche ou de visuel">Création d’affiche ou de visuel</option>
+            <option value="Création de logo ou identité visuelle">Création de logo ou identité visuelle</option>
+            <option value="Maintenance de site internet">Maintenance de site internet</option>
+            <option value="Demande particulière">Demande particulière</option>
+            <option value="Demande de stage">Demande de stage</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="7" placeholder="Présentez votre projet, votre besoin ou votre objectif..." required></textarea>
+        </div>
+
+        <label class="form-consent">
+          <input type="checkbox" name="Consentement" value="Accepté" required>
+          <span>J’accepte d’être recontacté par Alyo au sujet de ma demande.</span>
+        </label>
+
+        <button type="submit" class="contact-submit">
+          Envoyer la demande
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="m13 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <div class="contact-text">
+        <div class="contact-info-list">
+          <a href="mailto:alyocommunication@gmail.com" class="contact-info-item">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Email</strong>
+              <small>alyocommunication@gmail.com</small>
+            </span>
+          </a>
+
+          <a href="tel:+33754366013" class="contact-info-item">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8.4 4.7 10 8.4c.2.5.1 1.1-.3 1.5l-1 1c1.2 2.3 3.1 4.2 5.4 5.4l1-1c.4-.4 1-.5 1.5-.3l3.7 1.6c.6.3.9.9.8 1.5l-.5 2.2c-.1.6-.7 1-1.3 1C10.4 21 3 13.6 3 4.7c0-.6.4-1.2 1-1.3l2.2-.5c.6-.1 1.3.2 1.5.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Téléphone</strong>
+              <small>07 54 36 60 13</small>
+            </span>
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=6+rue+Valdemaine+49100+Angers" target="_blank" rel="noopener" class="contact-info-item">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 12.2a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            <span>
+              <strong>Siège social</strong>
+              <small>6 rue Valdemaine, 49100 Angers</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-map-wide reveal reveal-d1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5393.698862910568!2d-0.555629223161619!3d47.47336349716801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878c20b7c331d%3A0x32853a9dcf9b724a!2s6%20Rue%20Valdemaine%2C%2049100%20Angers!5e0!3m2!1sfr!2sfr!4v1777934356824!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-logo" aria-label="Alyo - retour à l'accueil">
+          <img src="../logo/logo-white.png" alt="Logo Alyo" />
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="web.html">Création web</a></li>
+          <li><a href="creation.html">Identité visuelle</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Infos</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+          <li><a href="cgu.html">Conditions</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@alyo.fr">contact@alyo.fr</a></li>
+          <li><a href="tel:+33754366013">+33 7 54 36 60 13</a></li>
+          <li><a href="#">Angers, France</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2026 Alyo</span>
+        <span class="footer-dot"></span>
+        <span>Tous droits réservés</span>
+      </div>
+
+      <div class="socials">
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.3 3.82 3.3 4.88c0 1.04.82 1.88 1.91 1.88h.02c1.13 0 1.94-.84 1.94-1.88C7.15 3.82 6.36 3 5.25 3ZM20.7 13.08c0-3.42-1.83-5.01-4.28-5.01-1.97 0-2.85 1.08-3.35 1.84V8.5H9.69c.04.93 0 11.5 0 11.5h3.38v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20H20.7v-6.92Z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 3h8.5A4.75 4.75 0 0 1 21 7.75v8.5A4.75 4.75 0 0 1 16.25 21h-8.5A4.75 4.75 0 0 1 3 16.25v-8.5A4.75 4.75 0 0 1 7.75 3Zm0 1.8A2.95 2.95 0 0 0 4.8 7.75v8.5a2.95 2.95 0 0 0 2.95 2.95h8.5a2.95 2.95 0 0 0 2.95-2.95v-8.5a2.95 2.95 0 0 0-2.95-2.95h-8.5ZM12 7.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3Zm0 1.8A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm4.95-2.75a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.85 3c.18 1.52 1.04 2.73 2.42 3.45.8.42 1.67.64 2.53.65v2.77a7.3 7.3 0 0 1-2.79-.55 7.84 7.84 0 0 1-2.1-1.26v6.46c0 3.2-2.35 5.48-5.47 5.48A5.42 5.42 0 0 1 4 14.58c0-3.02 2.43-5.41 5.53-5.41.33 0 .64.03.95.08v2.86a3.8 3.8 0 0 0-.95-.12c-1.5 0-2.7 1.09-2.7 2.54 0 1.5 1.13 2.59 2.62 2.59 1.66 0 2.64-1.07 2.64-2.66V3h2.76Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="global.js"></script>
+</body>
+</html>
