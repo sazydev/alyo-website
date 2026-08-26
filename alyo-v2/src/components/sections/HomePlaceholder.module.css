@@ -1,0 +1,4 @@
+.placeholder {
+  min-height: clamp(280px, 42vw, 560px);
+  background: var(--color-white);
+}
