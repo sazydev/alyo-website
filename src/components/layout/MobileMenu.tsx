@@ -1,6 +1,6 @@
-import Link from "next/link";
-import type { MouseEvent, RefObject } from "react";
+import type { RefObject } from "react";
 
+import { SectionLink } from "@/components/ui/SectionLink";
 import { contactHref, mainNavigation, socialLinks } from "@/data/navigation";
 
 import { SocialIcon } from "../ui/SocialIcon";
@@ -13,7 +13,6 @@ type MobileMenuProps = {
   backRef: RefObject<HTMLButtonElement | null>;
   onClose: () => void;
   onBack: () => void;
-  onContactClick: (event: MouseEvent<HTMLAnchorElement>) => void;
 };
 
 export function MobileMenu({
@@ -22,7 +21,6 @@ export function MobileMenu({
   backRef,
   onClose,
   onBack,
-  onContactClick,
 }: MobileMenuProps) {
   return (
     <nav
@@ -50,28 +48,26 @@ export function MobileMenu({
       </button>
 
       {mainNavigation.map((item) => (
-        <Link
+        <SectionLink
           key={item.href}
           href={item.href}
+          targetId={item.href === "/" ? "hero" : undefined}
           className={item.href === activeHref ? styles.active : undefined}
           aria-current={item.href === activeHref ? "location" : undefined}
           onClick={onClose}
         >
           {item.label}
-        </Link>
+        </SectionLink>
       ))}
 
       <div className={styles.mobileCta}>
-        <Link
+        <SectionLink
           href={contactHref}
           className={styles.greenButton}
-          onClick={(event) => {
-            onContactClick(event);
-            onClose();
-          }}
+          onClick={onClose}
         >
           Contactez-nous
-        </Link>
+        </SectionLink>
       </div>
 
       <div className={styles.socials}>

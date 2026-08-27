@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionLink } from "@/components/ui/SectionLink";
 import { reasons } from "@/data/home";
 
 import styles from "./OnePage.module.css";
@@ -60,9 +61,9 @@ export function WhyAlyo() {
               Site, identité visuelle ou supports de communication : je vous aide à mettre en place quelque chose de
               simple, propre et adapté à votre structure.
             </p>
-            <a className={styles.whyFeatureButton} href="#contactez-nous">
+            <SectionLink className={styles.whyFeatureButton} href="#contactez-nous">
               Parlons-en simplement <span aria-hidden="true">→</span>
-            </a>
+            </SectionLink>
           </article>
         </Reveal>
       </div>

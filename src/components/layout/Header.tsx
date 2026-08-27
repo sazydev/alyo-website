@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { MouseEvent as ReactMouseEvent } from "react";
 import { useEffect, useRef, useState } from "react";
 
+import { SectionLink } from "@/components/ui/SectionLink";
 import { contactHref, mainNavigation } from "@/data/navigation";
 
 import { MobileMenu } from "./MobileMenu";
@@ -136,33 +135,6 @@ export function Header() {
     window.requestAnimationFrame(() => burgerRef.current?.focus());
   };
 
-  const handleContactClick = (event: ReactMouseEvent<HTMLAnchorElement>) => {
-    if (
-      pathname !== "/" ||
-      event.button !== 0 ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey
-    ) {
-      return;
-    }
-
-    const contactSection = document.getElementById("contactez-nous");
-
-    if (!contactSection) {
-      return;
-    }
-
-    event.preventDefault();
-
-    if (window.location.hash !== "#contactez-nous") {
-      window.history.pushState(null, "", contactHref);
-    }
-
-    contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <>
       <header
@@ -171,9 +143,9 @@ export function Header() {
       >
         <div className={styles.backdrop} aria-hidden="true" />
 
-        <Link href="/" className={styles.logo} aria-label="Accueil Alyo">
+        <SectionLink href="/" targetId="hero" className={styles.logo} aria-label="Accueil Alyo">
           <span className={styles.logoMark} />
-        </Link>
+        </SectionLink>
 
         <MobileMenu
           isOpen={isMenuOpen}
@@ -181,17 +153,15 @@ export function Header() {
           backRef={backRef}
           onClose={closeMenu}
           onBack={closeMenuAndReturnFocus}
-          onContactClick={handleContactClick}
         />
 
         <div className={styles.desktopCta}>
-          <Link
+          <SectionLink
             href={contactHref}
             className={styles.greenButton}
-            onClick={handleContactClick}
           >
             Contactez-nous
-          </Link>
+          </SectionLink>
         </div>
 
         <button

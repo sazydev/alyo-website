@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import { SectionLink } from "@/components/ui/SectionLink";
 import { contactHref } from "@/data/navigation";
 import {
   digitalPricingOffers,
@@ -65,13 +64,13 @@ function PricingCard({ offer }: { offer: PricingOffer }) {
         {offer.points.map((point) => <li key={point}>{point}</li>)}
       </ul>
 
-      <Link
+      <SectionLink
         href={contactHref}
         className={`${styles.button} ${offer.featured ? styles.featuredButton : ""}`}
         aria-label={`${offer.buttonLabel} pour l’offre ${offer.title}`}
       >
         {offer.buttonLabel}
-      </Link>
+      </SectionLink>
     </article>
   );
 }

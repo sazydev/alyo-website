@@ -1,6 +1,6 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { SectionLink } from "./SectionLink";
 import styles from "./Button.module.css";
 
 type ButtonProps = {
@@ -22,9 +22,9 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <SectionLink href={href} className={classes}>
         {children}
-      </Link>
+      </SectionLink>
     );
   }
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 
+import { SectionLink } from "@/components/ui/SectionLink";
 import { heroPatternLines, heroPatternPositions } from "@/data/hero";
 
 import styles from "./Hero.module.css";
@@ -42,9 +42,9 @@ export function Hero() {
 
         <p>Une présence digitale simple et efficace pour attirer plus d&apos;adhérents</p>
 
-        <Link href="#presentation" className={styles.button}>
+        <SectionLink href="#presentation" className={styles.button}>
           Découvrir Alyo
-        </Link>
+        </SectionLink>
       </div>
     </section>
   );

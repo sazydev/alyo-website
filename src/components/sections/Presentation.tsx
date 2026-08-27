@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionLink } from "@/components/ui/SectionLink";
 
 import styles from "./OnePage.module.css";
 
@@ -30,9 +31,9 @@ export function Presentation() {
             <span><i>✓</i> Identité visuelle</span>
             <span><i>✓</i> Réseaux sociaux</span>
           </div>
-          <a className={styles.blueButton} href="#contactez-nous">
+          <SectionLink className={styles.blueButton} href="#contactez-nous">
             Demander un devis <span aria-hidden="true">→</span>
-          </a>
+          </SectionLink>
         </Reveal>
       </div>
     </section>

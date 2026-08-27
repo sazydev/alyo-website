@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { SectionLink } from "@/components/ui/SectionLink";
 import {
   footerNavigation,
   legalNavigation,
@@ -17,7 +18,7 @@ export function Footer() {
       <div className={styles.shell}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <Link href="/" className={styles.logo} aria-label="Alyo - retour à l'accueil">
+            <SectionLink href="/" targetId="hero" className={styles.logo} aria-label="Alyo - retour à l'accueil">
               <Image
                 src="/brand/logo-white.webp"
                 alt="Logo Alyo"
@@ -25,7 +26,7 @@ export function Footer() {
                 height={500}
                 unoptimized
               />
-            </Link>
+            </SectionLink>
           </div>
 
           {footerNavigation.map((column) => (
@@ -35,7 +36,9 @@ export function Footer() {
                 {column.links.map((link) => (
                   <li key={link.label}>
                     {link.href ? (
-                      <Link href={link.href}>{link.label}</Link>
+                      <SectionLink href={link.href}>
+                        {link.label}
+                      </SectionLink>
                     ) : (
                       <span className={styles.placeholderLink}>{link.label}</span>
                     )}
